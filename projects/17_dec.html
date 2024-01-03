@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Summary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Overpass:wght@300&family=Red+Hat+Display:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Red Hat Display', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: hsl(225, 100%, 98%);
+            background-image: url(pattern-background-desktop.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+
+        .mainContainer {
+            /* border: 1px solid red; */
+            margin: 100px;
+            width: 380px;
+            height: 590px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+        .childContainer1 {
+            /* border: 1px solid blue; */
+            width: 100%;
+            height: 31%;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .childContainer2 {
+            padding: 0 20px;
+            /* border: 1px solid blue; */
+            width: 340px;
+            height: 69%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+            border-radius: 0px 0px 20px 20px;
+            background-color: white;
+        }
+
+        .childContainer1 img {
+            width: 100%;
+            border-radius: 20px 20px 0 0;
+        }
+
+        .flexChild {
+            padding: 0 15px;
+            width: 275px;
+            height: 80px;
+            /* border: 1px solid green; */
+            border-radius: 10px;
+            background-color: hsl(225, 100%, 98%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .musicChild {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        .flexkaBacha{
+            /* border: 0.5px solid black; */
+            width: 137px;
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            width: 310px;
+            height: 45px;
+            border: none;
+            background-color: hsl(245, 75%, 52%);
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            color: hsl(225, 100%, 94%);
+            box-shadow: hsl(245, 60%, 78%) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        }
+
+
+        /* All text properties */
+        .order {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: hsl(223, 47%, 23%);
+        }
+
+        .para {
+            font-size: 15px;
+            color: hsl(224, 23%, 55%);
+        }
+        .annual{
+            font-size: 14px;
+            font-weight: 900;
+            color: hsl(223, 47%, 23%);
+        }
+        .price{
+            font-size: 14px;
+            font-weight: 500;
+            color: hsl(224, 23%, 55%);
+        }
+        .change{
+            font-size: small;
+            font-weight: 900;
+            color: hsl(245, 75%, 52%);
+        }
+        .cancel{
+            font-size: 13px;
+            font-weight: 900;
+            
+        }
+        .cancel a{
+            text-decoration: none;
+            color: hsl(224, 23%, 55%);
+        }
+
+
+        /* All hover property */
+        button:hover{
+            background-color: hsl(243, 100%, 74%);
+        }
+        .change:hover{
+            color: hsl(243, 100%, 74%);
+            text-decoration: none;
+        }
+        .cancel a:hover{
+            color: hsl(223, 47%, 23%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="childContainer1">
+            <img src="illustration-hero.svg" alt="hero">
+        </div>
+        <div class="childContainer2">
+            <span class="order">Order Summary</span>
+            <p class="para">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you
+                like!</p>
+            <div class="flexChild">
+                <div class="flexkaBacha">
+                    <div class="music"><img width="40" src="icon-music.svg" alt="">
+                    </div>
+                    <div class="musicChild">
+                        <span class="annual">Annual Plan</span>
+                        <span class="price">$59.99/year</span>
+                    </div>
+                </div>
+                
+
+                <a href="#" class="change">Change</a>
+            </div>
+            <div class="button"><button type="submit">Proceed to Payment</button></div>
+            <div class="cancel"><a href="#">Cancel Order</a></div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

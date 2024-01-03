@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&family=Overpass:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        /* utility class */
+        .j-cenetr {
+            justify-content: center;
+        }
+
+        .a-center {
+            align-items: center;
+        }
+
+        .m0 {
+            margin: 0;
+        }
+        .gray{
+            color: gray;
+        }
+
+        /* ------------------------------------------------------------------------- */
+
+        .mainContainer {
+            margin-top: 120px;
+            width: 600px;
+            height: 500px;
+            /* border: 1px solid black; */
+            display: flex;
+            border-radius: 40px;
+            font-family: 'Hanken Grotesk', sans-serif;
+            box-shadow: rgb(125 147 219 / 20%) 0px 7px 29px 0px;
+
+        }
+
+        /* child1 container css */
+        .child1 {
+            display: flex;
+            width: 220px;
+            /* border: 1px solid red; */
+            background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+            border-radius: 40px;
+            flex-direction: column;
+            color: hsl(0, 0%, 100%);
+            justify-content: space-evenly;
+            padding: 40px;
+        }
+
+        .circle {
+            background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+            /* border: 1px solid red; */
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            text-align: center;
+            margin: 0;
+            color: hsl(241, 100%, 89%);
+            font-size: 15px;
+        }
+
+        /* child2 container css */
+
+
+        .child2 {
+            /* border: 5px solid blue; */
+            width: 210px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 0 40px;
+        }
+
+        /* box CSS */
+
+
+        .box {
+            /* border: 1px solid red; */
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .box-child1 {
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            background-color: hsl(0deg 100% 97.93%);
+            border-radius: 5px;
+            justify-content: space-between;
+            padding: 0 4px;
+            font-weight: bold;
+        }
+
+        .box-child2 {
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            background-color: hsl(39, 100%, 95%);
+            border-radius: 5px;
+            justify-content: space-between;
+            padding: 0 4px;
+            font-weight: bold;
+        }
+
+        .box-child3 {
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            background-color: hsl(166deg 100% 95.69%);
+            border-radius: 5px;
+            justify-content: space-between;
+            padding: 0 4px;
+            font-weight: bold;
+        }
+
+        .box-child4 {
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 40px;
+            background-color: hsl(234deg 100% 95.86%);
+            border-radius: 5px;
+            justify-content: space-between;
+            padding: 0 4px;
+            font-weight: bold;
+        }
+
+
+
+        .bachee{
+            display: flex;
+        }
+        .image{
+            margin-right: 5px;
+        }
+        .reaction{
+            color: hsl(0, 100%, 67%);
+        }
+        .memory{
+            color: hsl(39, 100%, 56%);
+        }
+        .verbal{
+            color: hsl(166, 100%, 37%);
+        }
+        .visual{
+            color: hsl(234, 85%, 45%);
+        }
+
+
+        /* Button CSS */
+
+
+        .button {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: hsl(224, 30%, 27%);
+            color: hsl(0, 0%, 100%);
+            border: none;
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body style="display: flex; justify-content: center; align-items: center;">
+    <div class="mainContainer">
+        <div class="child1 a-center ">
+            <div>
+                <h3>Your Result</h3>
+            </div>
+            <div class="circle">
+                <div>
+                    <h1 style="font-size: 50px;">76</h1>
+                </div>
+                <div>
+                    <p>of 100</p>
+                </div>
+            </div>
+            <div>
+                <h2>Great</h2>
+            </div>
+            <div>
+                <p>You scored higher than 65% of the people who have taken these tests.</p>
+            </div>
+        </div>
+        <div class="child2">
+            <div>
+                <h3>Summary</h3>
+            </div>
+            <div class="box">
+                <div class="box-child1">
+                    <div class="bachee"><svg class="image" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20">
+                            <path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25"
+                                d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z" />
+                        </svg>
+                        <div class="reaction">Reaction</div>
+                    </div>
+                    <span>80 <span class="gray">/100</span></span>
+                </div>
+
+                <div class="box-child2">
+                    <div class="bachee"><svg class="image" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0"/></svg>
+                        <div class="memory">Memory</div>
+                    </div>
+                    <span>92 <span class="gray">/100</span></span>
+                </div>
+
+                <div class="box-child3">
+                    <div class="bachee"><svg class="image" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#00BB8F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z"/></svg>
+                        </svg>
+                        <div class="verbal">Verbal</div>
+                    </div>
+                    <span>61 <span class="gray">/100</span></span>
+                </div>
+
+                <div class="box-child4">
+                    <div class="bachee"><svg class="image" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z"/><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z"/></svg>
+                        <div class="visual">Visual</div>
+                    </div>
+                    <span>72 <span class="gray">/100</span></span>
+                </div>
+            </div>
+
+            <div class="button"><button>Continue</button></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
