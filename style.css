@@ -1,0 +1,14 @@
+.live-demo {
+  color: #dc3545;
+  /* background-color: red; */
+  animation: animi 0.8s infinite ease;
+}
+
+@keyframes animi {
+  0% {
+    color: #dc3545;
+  }
+  50% {
+    color: #ffc3c3;
+  }
+}
