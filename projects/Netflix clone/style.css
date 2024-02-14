@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+.main {
+  background-image: url("./bg_main.jpg");
+  height: 92vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(2000px, 100vw);
+}
+.main .box {
+  height: 92vh;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+.navbar {
+  margin: auto;
+  max-width: 77vw;
+  height: 85px;
+  /* background-color: brown; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+.english {
+  padding: 7px 40px;
+  background-color: transparent;
+  border: 0.5px solid gray;
+  border-radius: 4px;
+  color: white;
+  margin: 0 17px;
+}
+.black {
+  color: black;
+}
+.sign-in {
+  padding: 7px 15px;
+  border-radius: 4px;
+  background-color: #e70a0a;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.get-started {
+  background-color: #e70a0a;
+  color: white;
+  padding: 8px 24px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.input {
+  background-color: transparent;
+  color: white;
+  padding: 20px 100px 20px 15px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 0.5px solid gray;
+  font-weight: 500;
+  height: 10px;
+}
+
+.bold {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hero {
+  height: calc(100% - 85px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+  gap: 25px 0;
+  padding: 0 25px;
+  /* font-family: 'Martel Sans', sans-serif; */
+  /* font-family: 'League Spartan', sans-serif; */
+  font-family: "Poppins", sans-serif;
+}
+.hero > :nth-child(1) {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.separation {
+  height: 8px;
+  background-color: #252424;
+}
+
+/* section css */
+
+.first {
+  padding: 60px 0;
+  max-width: 75vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.sec-img img {
+  width: 38vw;
+  position: relative;
+  z-index: 2;
+}
+.sec-img {
+  position: relative;
+  top: 0;
+}
+.sec-img .videoMain {
+  position: absolute;
+  top: 60px;
+  left: 76px;
+}
+
+/* .sec-img .videoBox video{
+  position: absolute;
+  top: 60px;
+  left: 76px;
+} */
+
+.first > div {
+  display: flex;
+  flex-direction: column;
+}
+.first > div :first-child {
+  font-size: 48px;
+  font-weight: 700;
+}
+.first > div :nth-child(2) {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* section FAQ css */
+
+.faq {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  max-width: 75vw;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 40px 0;
+}
+.faq .faqspan {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 10px;
+}
+.faqBox {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2d2d2d;
+  padding: 25px;
+  width: 100%;
+  font-size: 24px;
+  /* font-weight: 400; */
+}
+.faqBox:hover {
+  background-color: rgb(65 65 65);
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+/* footer style */
+footer {
+  color: white;
+  max-width: 75vw;
+  margin: auto;
+  padding: 3rem 0;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 20px 0;
+}
+.footer span {
+  font-size: 16px;
+}
+
+.footerDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerDiv a {
+  color: white;
+  font-size: 14px;
+}
+
+.faq .faqBottom {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.faq-span {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Video Box CSS */
+
+.videoBox{
+  border: 1px solid white;
+  width: 380px;
+  height: 240px;
+  position: absolute;
+  left: 96px;
+  top: 43px;
+  overflow: hidden;
+  /* z-index: 10; */
+}
