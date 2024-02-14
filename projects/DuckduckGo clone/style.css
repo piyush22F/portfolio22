@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.navBar {
+  margin: auto;
+  width: 87.3%;
+  height: 80px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.search-bar {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 60px;
+  transition-duration: 0.5s;
+  /* transition: all; */
+}
+
+.search-bar input {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border: 0.5px solid #c3c3c3;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
+}
+
+.search-bar img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.search-bar2 {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-right: 60px;
+  transition-duration: 0.5s;
+  opacity: 0;
+}
+
+.search-bar2 input {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  border: 0.5px solid #c3c3c3;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
+}
+
+.search-bar2 img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+::placeholder{
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    color: #c3c3c3;
+}
+
+/* main section CSS */
+
+.main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  word-wrap: wrap;
+}
+
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 12px;
+  margin: 20px;
+}
+.card{
+  width: 280px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 10px;
+}
+
+.card p{
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+}
+
+.card a{
+  text-decoration: none;
+  color: #2b55ca;
+  font-weight: 500;
+  border: 1px solid #2b55ca;
+  padding: 5px 50px;
+  border-radius: 10px;
+}
+
+.card .duck-a{
+  background-color: #3969ef;
+  color: white;
+}
+
+/* hover class CSS */
+.card a:hover{
+  background-color: #eeeeee;
+}
+.card .duck-a:hover{
+  background-color: #134cec;
+}
+
+.main h1{
+  margin: 30px 25px;
+}
+
+@media screen and (max-width: 800px){
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-bar {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 60px;
+    opacity: 0;
+  }
+
+  .search-bar2 {
+    width: 92%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* margin-right: 60px; */
+    margin: 0 40px;
+    opacity: 1;
+  }
+
+  .search-bar2 input {
+    width: 100%;
+    height: 45px;
+    padding: 10px;
+    border: 0.5px solid #c3c3c3;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 20px;
+  }
+  
+  .search-bar2 img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+
+
+@media screen and (max-width: 700px){
+
+  .cards-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 12px;
+    margin: 20px;
+  }
+}
